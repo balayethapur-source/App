@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download InstaHomeCare Technician Manager APK & Source Code</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-green: #218447;
+      --primary-green-dark: #176536;
+      --navy-blue: #173653;
+      --navy-blue-dark: #0f2438;
+      --bg-color: #f8faf9;
+      --card-bg: #ffffff;
+      --text-main: #191c1e;
+      --text-muted: #5f6e65;
+      --border-color: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    .container {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .header-card {
+      background: var(--card-bg);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px -2px rgba(23, 54, 83, 0.08);
+      border: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: #e7f5ec;
+      border-radius: 1.25rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      color: var(--navy-blue);
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .tagline {
+      color: var(--primary-green);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtext {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .download-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .download-card {
+      background: var(--card-bg);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      box-shadow: 0 4px 20px -2px rgba(23, 54, 83, 0.06);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      flex-shrink: 0;
+    }
+    .icon-box.green {
+      background: #e7f5ec;
+      color: var(--primary-green);
+    }
+    .icon-box.navy {
+      background: #e2eaf1;
+      color: var(--navy-blue);
+    }
+    .card-title-group h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy-blue);
+    }
+    .meta-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .meta-tag.green {
+      background: #e7f5ec;
+      color: var(--primary-green-dark);
+    }
+    .meta-tag.navy {
+      background: #e2eaf1;
+      color: var(--navy-blue-dark);
+    }
+    .desc {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-radius: 0.875rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-green {
+      background: var(--primary-green);
+      color: white;
+      box-shadow: 0 4px 12px rgba(33, 132, 71, 0.25);
+    }
+    .btn-green:hover {
+      background: var(--primary-green-dark);
+      transform: translateY(-1px);
+    }
+    .btn-navy {
+      background: var(--navy-blue);
+      color: white;
+      box-shadow: 0 4px 12px rgba(23, 54, 83, 0.25);
+    }
+    .btn-navy:hover {
+      background: var(--navy-blue-dark);
+      transform: translateY(-1px);
+    }
+    .instructions-card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      font-size: 0.88rem;
+    }
+    .instructions-card h3 {
+      color: var(--navy-blue);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      color: var(--text-muted);
+      padding-left: 1.25rem;
+    }
+    .steps li strong {
+      color: var(--text-main);
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <div class="logo-badge">
+        <img src="/assets/aistudio/file_00000000687082118fbed1f139def317_f365e57c.png" alt="InstaHomeCare Logo">
+      </div>
+      <h1>InstaHomeCare</h1>
+      <div class="tagline">Small Jobs. Instant Solutions.</div>
+      <p class="subtext">
+        Technician Manager (Salem, Tamil Nadu) — Internal administrative tool for recording, verifying, filtering, and managing service technicians.
+      </p>
+    </div>
+
+    <div class="download-grid">
+      <!-- APK Download Card -->
+      <div class="download-card">
+        <div class="card-header">
+          <div class="icon-box green">📱</div>
+          <div class="card-title-group">
+            <h2>InstaHomeCare Debug APK</h2>
+            <span class="meta-tag green">v1.1 • 24 MB • Ready to Install</span>
+          </div>
+        </div>
+        <p class="desc">
+          Ready-to-install Android application package. Includes contact book picker integration, Room database, multi-category selection, Excel CSV export, and JSON backup/restore.
+        </p>
+        <a href="/InstaHomeCare_Technician_Manager_debug.apk" download="InstaHomeCare_Technician_Manager_debug.apk" class="btn btn-green">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Direct Download APK (24 MB)
+        </a>
+      </div>
+
+      <!-- Project Source Code ZIP -->
+      <div class="download-card">
+        <div class="card-header">
+          <div class="icon-box navy">📦</div>
+          <div class="card-title-group">
+            <h2>Complete Android Studio Project</h2>
+            <span class="meta-tag navy">ZIP Archive • 71 MB • Full Source Code</span>
+          </div>
+        </div>
+        <p class="desc">
+          Full source code containing all Kotlin files, Jetpack Compose layouts, Room database & DAO implementations, Unit tests, and Gradle build configurations.
+        </p>
+        <a href="/InstaHomeCare_Technician_Manager_Project.zip" download="InstaHomeCare_Technician_Manager_Project.zip" class="btn btn-navy">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Direct Download Project ZIP (71 MB)
+        </a>
+      </div>
+    </div>
+
+    <!-- Installation Help -->
+    <div class="instructions-card">
+      <h3>📲 How to Install on Your Android Phone</h3>
+      <ol class="steps">
+        <li>Tap the <strong>Direct Download APK</strong> button above from your phone's browser (or download on PC and send via WhatsApp/Google Drive/USB).</li>
+        <li>Once downloaded, open the file <strong>InstaHomeCare_Technician_Manager_debug.apk</strong> from your Notifications or Downloads folder.</li>
+        <li>If prompted by Android, tap <strong>Settings</strong> and enable <strong>"Allow from this source"</strong> (Standard Android security setting for apps installed directly).</li>
+        <li>Tap <strong>Install</strong>. Once completed, tap <strong>Open</strong> to start managing technicians!</li>
+      </ol>
+    </div>
+
+    <footer>
+      InstaHomeCare Technician Manager • Salem City • Completely Offline & Secure
+    </footer>
+  </div>
+</body>
+</html>

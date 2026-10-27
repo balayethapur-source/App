@@ -1,0 +1,6 @@
+{
+  "name": "InstaHomeCare Technician Manager",
+  "description": "Internal management application for InstaHomeCare Salem to record, search, filter, export and manage verified service technicians.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
